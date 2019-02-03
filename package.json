@@ -1,9 +1,9 @@
 {
     "engines": {
-        "composer": "^0.20.0"
+        "composer": "^0.20.6"
     },
     "name": "simple-blind-car-auction",
-    "version": "0.2.6-deploy.0",
+    "version": "0.0.1",
     "description": "Implementation of a simple blind car auction. The purpose of this repo is to introduce you to the concepts of a blockchain by showing you how a blockchain transfers assets between participants in a business network. ",
     "networkImage": "https://hyperledger.github.io/composer-sample-networks/packages/carauction-network/networkimage.svg",
     "networkImageanimated": "https://hyperledger.github.io/composer-sample-networks/packages/carauction-network/networkimageanimated.svg",
@@ -27,24 +27,30 @@
         "auction",
         "composer",
         "composer-network",
-        "blockchain"
+        "blockchain",
+        "composer",
+        "composer-network"
     ],
     "author": "Hyperledger Composer, nmpegetis",
     "license": "Apache-2.0",
     "devDependencies": {
-        "chai": "^3.5.0",
-        "composer-admin": "^0.20.0-0",
-        "composer-cli": "^0.20.0-0",
-        "composer-client": "^0.20.0-0",
-        "composer-common": "^0.20.0-0",
-        "composer-connector-embedded": "^0.20.0-0",
-        "eslint": "^3.6.1",
+        "chai": "latest",
+        "chai-as-promised": "latest",
+        "composer-admin": "^0.20.6",
+        "composer-cli": "^0.20.6",
+        "composer-client": "^0.20.6",
+        "composer-common": "^0.20.6",
+        "composer-connector-embedded": "^0.20.6",
+        "composer-cucumber-steps": "^0.20.6",
+        "cucumber": "^2.2.0",
+        "eslint": "latest",
         "istanbul": "^0.4.5",
         "jsdoc": "^3.5.5",
         "license-check-and-add": "~2.3.0",
-        "mkdirp": "^0.5.1",
-        "mocha": "^3.2.0",
-        "moment": "^2.17.1"
+        "mkdirp": "latest",
+        "mocha": "latest",
+        "moment": "^2.17.1",
+        "nyc": "latest"
     },
     "license-check-and-add-config": {
         "folder": ".",
@@ -74,5 +80,8 @@
                 "file": "../../markdown-license.txt"
             }
         }
+    },
+    "dependencies": {
+        "generator-hyperledger-composer": "^0.20.6"
     }
 }
